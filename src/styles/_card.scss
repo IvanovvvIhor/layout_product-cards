@@ -3,8 +3,8 @@
   width: 200px;
   height: 408px;
   border-radius: 5px;
-  background-color: $card--color;
-  border: 1px solid $border--color;
+  background-color: $card-color;
+  border: 1px solid $border-color;
 
   &__photo {
     box-sizing: border-box;
@@ -23,7 +23,7 @@
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0;
-    color: $text__main--color;
+    color: $text__main-color;
     width: 166px;
     margin: 0 auto 4px 16px;
   }
@@ -33,7 +33,7 @@
     line-height: 14px;
     font-weight: 400;
     letter-spacing: 0;
-    color: $product__text--color;
+    color: $product__text-color;
     width: 166px;
     margin-left: 16px;
     margin-top: 0;
@@ -66,6 +66,24 @@
     width: 166px;
     align-items: center;
     margin: 16px;
+
+    &-title {
+      color: $product__text-color;
+      font-family: Roboto, sans-serif;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0;
+    }
+
+    &-count {
+      color: $text__main-color;
+      font-family: Roboto, sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: 0;
+      text-align: right;
+    }
   }
 
   &__buy {
@@ -74,9 +92,9 @@
     justify-content: center;
     box-sizing: border-box;
     margin: 16px auto;
-    background-color: #00acdc;
+    background-color: $btn-color;
     border-radius: 5px;
-    border: 1px solid #00acdc;
+    border: 1px solid $btn-border-color;
     text-decoration: none;
     width: 166px;
     height: 40px;
@@ -90,27 +108,9 @@
     text-transform: uppercase;
 
     &:hover {
-      border: 1px solid #00acdc;
+      border: 1px solid $btn-border-color;
       color: #00acdc;
-      background-color: #fff;
+      background-color: $bcg-btn-color;
     }
   }
-}
-
-.secondary {
-  color: $product__text--color;
-  font-family: Roboto, sans-serif;
-  font-size: 12px;
-  line-height: 18px;
-  letter-spacing: 0;
-}
-
-.price {
-  color: $text__main--color;
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 18px;
-  letter-spacing: 0;
-  text-align: right;
 }
